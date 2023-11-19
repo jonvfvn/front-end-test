@@ -1,6 +1,6 @@
 import { configureStore } from 'redux-starter-kit';
 import { combineReducers } from 'redux';
-import queue from './Queue/reducer'
+import queue from './components/QueueScreen/reducer'
 
 const reducer = combineReducers({
     queue
