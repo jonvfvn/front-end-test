@@ -15,19 +15,18 @@ export const CustomerCard = styled.div`
     backface-visibility: hidden;
     transform: translateZ(0);
     transition: transform .3s ease-out;
-
     @media only screen and (max-width: 650px) {
       width: 100%;
       height: 125px;
+    }
   }
-}
-  }
+
   &:hover {
     transform: scale(1.025);
     @media only screen and (max-width: 600px) {
       transform: none;
+    }
   }
-
 `;
 
 export const Title = styled.h1`

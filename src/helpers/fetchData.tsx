@@ -6,8 +6,6 @@ export const fetchData = (saveToState: (customers: React.SetStateAction<QueuedCu
   
   fetchQueueData()
     .then( res => res.json())
-    .then((json: any) => {
-      saveToState(json.queueData.queue.customersToday);
-    })
+    .then((json: any) => saveToState(json.queueData.queue.customersToday))
     .catch( err => console.error(err));
 };

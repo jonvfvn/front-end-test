@@ -17,7 +17,7 @@ export const QueueScreen: FC = () => {
   }, []);
 
   return !customers.length 
-    ? <h1>Loading...</h1> 
+    ? <QueueScreenStyle><h2>Loading...</h2></QueueScreenStyle> 
     : (
     <QueueScreenStyle>
       <QueueLength>There are currently {customers.length} customers in the queue</QueueLength>
